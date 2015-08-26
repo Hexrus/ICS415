@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Hello world!</title>
+        <link href="fancy.css" rel="stylesheet" type="text/css">
+      </head>
+
+      <body>
+        <header>
+          <p><h1>Hello World!</h1></p>
+          <nav>
+            <ul>
+              <li><a href="Second%20Page.html">Second Page</a></li>
+              <li><a href="Third%20Page.html">Third Page</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <p>Welcome to my website!</p>
+
+      </body>
+    </html>
