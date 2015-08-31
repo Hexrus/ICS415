@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+</head>
+<body>
+<table style="width:100%">
+  <caption><header><h1>Welcome to my HomePage!</h1></header></caption>
+  <tr>
+    <td colspan="3">
+      <nav>
+       <ul>
+         <li style="display:inline"><a href="index.html">Home</a></li>
+         <li style="display:inline"><a href="other.html">Other</a></li>
+       </ul>
+      </nav>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <section id="creativity">
+        <p>Draw something below!</p>
+        <canvas id="drawing" height="500" width="500"></canvas>
+      </section>
+    </td>
+    <td>
+      <section id="dragAround">
+        <p>Try move this around!</p>
+        <div id="target" ondrop="drop(event)" ondragover=allowdrop(event)">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <polygon points="100, 10 40, 180 190, 60 10, 60 160, 180" style="fill:blue; stroke: yellow; stroke-width: 5; fill-rule: evenodd;" draggable="true" ondragstart="drag(event)"></polygon>
+        </svg>
+        </div>
+      </section>
+    </td>
+    <td>
+      <section id="Form">
+        <p>Please input your information so we can gather some data!</p>
+        <form>
+          Name: <input type="text" name="name"> <br>
+          Sex: <input type="radio" name="sex" value="Male">Male <br>
+               <input type="radio" name="sex" value="Female">Female <br>
+          Favorite Color: <input type="color" name="color"> <br>
+          Birthday: <input type="date" name="birthday"> <br>
+          Age: <input type="number" name="age"> <br>
+          <input type="submit" value="Submit"> <br>
+        </form>
+      </section>
+    </td>
+  </tr>
+  <tr>
+    <footer>
+      Copyright &copy; Michael Hoe
+    </footer>
+  </tr>
+</table>
+</body>
+</html>
