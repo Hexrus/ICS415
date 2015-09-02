@@ -1,0 +1,30 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  font-size: large;
+  height: 25%;
+  text-align: center;
+}
+
+nav {
+  height: 50px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+.parent section{
+  float: left;
+  clear: none;
+}
+
+#creativity {
+  width: 25%;
+}
+
+footer {
+  height: 50px;
+}
