@@ -1,0 +1,62 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  border-style: solid;
+  border-width: 1px;
+  border-color: antiquewhite;
+  color: cadetblue;
+  background-image: url("background.png");
+}
+
+a:link {
+  color: azure;
+}
+
+a:visited {
+  color: beige;
+}
+
+header {
+  font-size: 500%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  height: 50px;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+.parent div{
+  float: left;
+  border-style: solid;
+  border-color: antiquewhite;
+  border-width: 2px;
+}
+
+#sidebar {
+  width: 25%;
+  height: 450px;
+}
+
+#content {
+  width: 74.5%;
+  height: 450px;
+}
+
+footer {
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+  width: 99%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: antiquewhite;
+  text-align: center;
+}
