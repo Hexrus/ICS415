@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content=""width="device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to my first Bootstrap page!</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -11,9 +11,14 @@
   <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <div class="container">
+    <h1>Here</h1>
     <ul class="nav nav-tabs">
       <li class="active"><a href="#">Here</a></li>
-      <li><a href="#">There</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">There<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><form class="input-group"></form></a></li>
+        <li> <a href="#"><form class="input-group"></form></a></li>
+      </ul></li>
       <li<a href="#">Nowhere</a>
     </ul>
   </div>
