@@ -6,21 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to my first Bootstrap page!</title>
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <div class="container">
-    <h1>Here</h1>
+    <h1>Home</h1>
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#">Here</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">There<span class="caret"></span></a>
+      <li class="active"><a data-toggle="tab" href="#here">Here</a></li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#there">There<span class="caret"></span></a>
+
       <ul class="dropdown-menu">
-        <li><a href="#"><form class="input-group"></form></a></li>
-        <li> <a href="#"><form class="input-group"></form></a></li>
+        <li><a href="#"><Form 1</a></li>
+        <li> <a href="#">Form 2</a></li>
       </ul></li>
-      <li<a href="#">Nowhere</a>
+
+      <li><a data-toggle="tab" href="#nowhere">Nowhere</a></li>
     </ul>
+    <div class="tab-content">
+      <div id="here" class="tab-pane active">
+        <h2>Buttons!</h2>
+        <i class="fa fa-battery-empty"></i>
+        <button type="button" class="btn btn-default"><i class="fa fa-battery-empty">Default Button</i></button>
+      </div>
+      <div id="there" class="tab-pane">
+        <p>boopity doop doop</p>
+      </div>
+      <div id="nowhere" class="tab-pane">
+        <p>holy shiznit</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
