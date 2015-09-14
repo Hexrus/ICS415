@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to my first Bootstrap page!</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="container">
+  <header style="height: 25%;">
+    <h1>Welcome to my homepage!</h1>
+  </header>
+  <div class="row" style="height: 50px;">
+    <div class="col-xs-12">
+  <nav>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms<span class="caret"></span></a>
+
+      <ul class="dropdown-menu">
+        <li><a data-toggle="tab" href="#form1">Form 1</a></li>
+        <li><a data-toggle="tab" href="#form2">Form 2</a></li>
+      </ul></li>
+      <li><a data-toggle="tab" href="#three">Third page</a></li>
+    </ul>
+  </nav>
+    </div>
+  </div>
+  <div class="row tab-content">
+    <div class="tab-pane active" id="home">
+      <div class="col-xs-3">
+        <p>Summary: </p>
+        <p>This is the home tab!</p>
+      </div>
+      <div class="col-xs-9">
+        <button type="button" class="btn btn-default"><i class="fa fa-battery-empty">Low battery!</i></button>
+      </div>
+    </div>
+    <div class="tab-pane" id="form1">
+      <div class="col-xs-3">
+        <p>Summary: </p>
+        <p>This is the forms1 tab!</p>
+      </div>
+      <div class="col-xs-9">
+        <form>
+          Name: <input type="text" name="name"> <br>
+          Sex: <input type="radio" name="sex" value="Male">Male
+          <input type="radio" name="sex" value="Female">Female <br>
+          Favorite Color: <input type="color" name="color"> <br>
+          Birthday: <input type="date" name="birthday"> <br>
+          Age: <input type="number" name="age"> <br>
+          <input type="submit" value="Submit"> <br>
+        </form>
+      </div>
+    </div>
+    <div class="tab-pane" id="form2">
+      <div class="col-xs-3">
+        <p>Summary: </p>
+        <p>This is the forms2 tab!</p>
+      </div>
+      <div class="col-xs-9">
+        <p>Form2</p>
+      </div>
+    </div>
+    <div class="tab-pane" id="three">
+      <div class="col-xs-3">
+        <p>Summary: </p>
+        <p>This is the three tab!</p>
+      </div>
+      <div class="col-xs-9">
+        <p>Three</p>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="height: 50px;">
+    <div class="col-xs-12">
+      <footer>
+        Copyright &copy; Michael Hoe
+      </footer>
+    </div>
+  </div>
+</div>
+</body>
+</html>
