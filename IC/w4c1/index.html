@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to my first JS page!</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    var colorVal;
+    colorVal = true;
+
+    function changeColor(name, color) {
+      if(colorVal) {
+        document.getElementById(name).style.backgroundColor = color;
+        colorVal = false;
+      }
+      else {
+        document.getElementById(name).style.backgroundColor = name;
+        colorVal = true;
+      }
+    }
+  </script>
+</head>
+<body>
+<div id="container">
+  <div class="col-xs-12" style="border: solid; border: 3px;">
+    <p style="text-align: center;"><h1>Welcome to my homepage!</h1></p>
+  </div>
+  <div class="col-xs-3" style="border: solid; border: 2px;">
+    <p id="Summary Text">Mouseover the different squares to see magic!</p>
+  </div>
+  <div class="col-xs-9" style="border: solid; border: 2px;">
+    <div id="red" style="background-color: red; height: 200px; width: 200px;" onclick="changeColor('red', 'orange')"></div>
+    <div id="blue" style="background-color: blue; height: 200px; width: 200px; float: left;" onmouseover="changeColor('blue', 'green')" onmouseout="changeColor('blue', 'blue')"></div>
+    <div id="yellow" style="background-color: black; height: 200px; width: 200px; float: left;" onclick="changeColor('red', 'yellow')" onmouseover="changeColor('blue', 'purple')" onmouseout="changeColor('blue', 'blue')"></div>
+  </div>
+</div>
+</body>
+</html>
