@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form results</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    /**function getQuery() {
+      var queries = [], hash;
+      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        queries.push(hash[0]);
+        queries[hash[0]] = hash[1];
+      }
+      return queries;
+    }*/
+
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    function getField(name) {
+      for(var i = 0; i < query.length; i++) {
+        if(name === query[i]) {
+          return document.write(name);
+        }
+      }
+    }
+
+    /**var query = getQuery();
+    console.log(query);*/
+  </script>
+</head>
+<body>
+<div id="container">
+  <table style="width: 50%; text-align: 'center';">
+    <tr>
+      <td>Username:</td>
+      <td><script>getParameterByName("name")</script></td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><script>getParameterByName("address")</script></td>
+    </tr>
+    <tr>
+      <td>Phone Number:</td>
+      <td><script>getParameterByName("phone")</script></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
