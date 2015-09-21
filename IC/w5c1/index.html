@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to my homepage!</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    function randomColor() {
+      var colorPicker = Math.floor(Math.random() * 10);
+      var color;
+
+      switch(colorPicker) {
+        case 1:
+          color = "red";
+          break;
+        case 2:
+          color = "orange";
+          break;
+        case 3:
+          color = "yellow";
+          break;
+        case 4:
+          color = "green";
+          break;
+        case 5:
+          color = "blue";
+          break;
+        case 6:
+          color = "purple";
+          break;
+        case 7:
+          color = "pink";
+          break;
+        case 8:
+          color = "brown";
+          break;
+        case 9:
+          color = "black";
+          break;
+        default:
+          color = "white";
+      }
+
+      return color;
+    }
+
+    function randomFont() {
+      var fontPicker = Math.floor(Math.random() * 10);
+      var font;
+
+      switch(fontPicker) {
+        case 1:
+          font = "serif";
+          break;
+        case 2:
+          font = "sans-serif";
+          break;
+        case 3:
+          font = "monospace";
+          break;
+        default:
+          font = "fantasy";
+      }
+
+      return font;
+    }
+
+    $(document).ready(function() {
+      var $rowChange = $('.row');
+      var $colIDChange = $('#col1, #col2, #col3');
+
+      $rowChange.mouseenter(function() {
+        $(this).css("background-color", randomColor());;
+      });
+
+      $rowChange.mouseleave(function() {
+        $(this).css("background-color", "white");
+      });
+
+      $('#tog').click(function() {
+        $colIDChange.toggle();
+      })
+
+      $colIDChange.click(function() {
+        $(this).css("fontFamily", randomFont());
+      });
+    });
+  </script>
+</head>
+<body>
+<div id="container">
+  <div class="row">
+    <div class="col-xs-12" style="text-align: center; font-size: x-large;">
+      <em>Homepage</em>
+      <button id="tog" type="button" value="Toggle Button" style="height: 10px; width: 20px;"></button>
+    </div>
+  </div>
+  <div class="row" id="row2" style="height: 40%;">
+    <div class="col-xs-4" id="col1" style="background-color: red; height: 100px;">
+    </div>
+    <div class="col-xs-6" id="col2" style="font-family: fantasy; font-align: center; height: 100px;">
+      Well hellooooooooooooo~
+    </div>
+    <div class="col-xs-2" id="col3" style="background-color: black; color: white; font-family: sans-serif; height: 100px;">
+      Howdy ho neighbor!
+    </div>
+  </div>
+</div>
+</body>
+</html>
