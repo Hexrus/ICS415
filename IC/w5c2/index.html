@@ -11,24 +11,27 @@
   <script>
     $(document).ready(function() {
       var $3col = $('.col-sm-4');
-      var $4col = $('#sm31, #sm32, #sm33, #sm34');
+      var $4col = $('.col-sm-3');
 
       var $3colButt = $('.col-sm-4-button');
       var $4colButt = $('.col-sm-3-button');
+      var $4colButt2 = $('.col-sm-3-button2');
 
       $3colButt.click(function() {
         $3col.animate( {
-          height: 'toggle';
-          width: 'toggle';
+          height: 'toggle',
+          width: 'toggle'
         });
       });
 
       $4colButt.click(function() {
-        $4col.load("oneofus.txt");
+        $4col.load("oneofus.txt")
       });
+
+      $4colButt2.click(function() {
+        $4col.load("http://courses.ics.hawaii.edu/ics415f15/morea/040.javascript/ic-w5c2.html")
+      })
     });
-
-
   </script>
 </head>
 <body>
@@ -38,6 +41,7 @@
       Bootstrap Webpage
       <button type="button" value="Click moi!" class="col-sm-4-button" style="height: 100px; width: 100px;">Click moi!</button>
       <button type="button" value="No curikku watashi!" class="col-sm-3-button" style="height: 100px; width: 100px;">No curikku watashi!</button>
+      <button type="button" value="AltClick" class="col-sm-3-button2" style="height: 100px; width: 100px;">Alt click</button>
     </div>
   </div>
   <div class="row">
