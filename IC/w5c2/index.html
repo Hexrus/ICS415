@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to my homepage!</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var $3col = $('.col-sm-4');
+      var $4col = $('#sm31, #sm32, #sm33, #sm34');
+
+      var $3colButt = $('.col-sm-4-button');
+      var $4colButt = $('.col-sm-3-button');
+
+      $3colButt.click(function() {
+        $3col.animate( {
+          height: 'toggle';
+          width: 'toggle';
+        });
+      });
+
+      $4colButt.click(function() {
+        $4col.load("oneofus.txt");
+      });
+    });
+
+
+  </script>
+</head>
+<body>
+<div id="container">
+  <div class="row">
+    <div class="col-sm-12">
+      Bootstrap Webpage
+      <button type="button" value="Click moi!" class="col-sm-4-button" style="height: 100px; width: 100px;">Click moi!</button>
+      <button type="button" value="No curikku watashi!" class="col-sm-3-button" style="height: 100px; width: 100px;">No curikku watashi!</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color: red;">
+      Red
+    </div>
+    <div class="col-sm-4" style="background-color: orange;">
+      Orange
+    </div>
+    <div class="col-sm-4" style="background-color: yellow;">
+      Yellow
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3" id="sm31" style="background-color: green; color: white;">
+      Green
+    </div>
+    <div class="col-sm-3" id="sm32" style="background-color: blue; color: white;">
+      Blue
+    </div>
+    <div class="col-sm-3" id="sm33" style="background-color: purple; color: white;">
+      Purple
+    </div>
+    <div class="col-sm-3" id="sm34" style="background-color: black; color: white;">
+        Captain Planet
+    </div>
+  </div>
+</div>
+</body>
+</html>
