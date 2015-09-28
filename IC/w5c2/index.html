@@ -16,6 +16,7 @@
       var $3colButt = $('.col-sm-4-button');
       var $4colButt = $('.col-sm-3-button');
       var $4colButt2 = $('.col-sm-3-button2');
+      var $4colButt3 = $('.col-sm-3-button3');
 
       $3colButt.click(function() {
         $3col.animate( {
@@ -31,6 +32,12 @@
       $4colButt2.click(function() {
         $4col.load("http://courses.ics.hawaii.edu/ics415f15/morea/040.javascript/ic-w5c2.html")
       })
+
+      $4colButt3.click(function() {
+        $4col.get("http://courses.ics.hawaii.edu/ics415f15/modules/", function() {
+          document.getElementsByClassName($4col).innerHTML='<object type="text/html"'
+        })
+      })
     });
   </script>
 </head>
@@ -42,6 +49,7 @@
       <button type="button" value="Click moi!" class="col-sm-4-button" style="height: 100px; width: 100px;">Click moi!</button>
       <button type="button" value="No curikku watashi!" class="col-sm-3-button" style="height: 100px; width: 100px;">No curikku watashi!</button>
       <button type="button" value="AltClick" class="col-sm-3-button2" style="height: 100px; width: 100px;">Alt click</button>
+      <button type="button" value="AltClick2" class="col-sm-3-button3" style="height: 100px; width: 100px;">Alt click 2</button>
     </div>
   </div>
   <div class="row">
