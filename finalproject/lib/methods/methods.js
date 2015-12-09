@@ -7,7 +7,8 @@ Meteor.methods({
     Posts.insert({
       title: title,
       url: url,
-      owner: Meteor.userId()
+      owner: Meteor.userId(),
+      rating: 0
     });
   }
 });

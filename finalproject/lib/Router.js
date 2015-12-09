@@ -8,4 +8,5 @@ Router.configure({
 Router.map(function() {
   this.route('main', {path:'/'});
   this.route('myPuns', {path:'/myPuns'});
+  this.route('about', {path: '/about'});
 });

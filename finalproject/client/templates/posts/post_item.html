@@ -1,7 +1,15 @@
 <template name="postItem">
   <div class="post">
     <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      <h3>
+        <a href="{{url}}">{{title}}</a>
+        <span>{{domain}}</span>
+        <div class="ratings">
+         <span><a class="clickPlus"><i class="fa fa-plus-square"></i></a></span>
+         <span><a class="clickMinus"><i class="fa fa-minus-square"></i></a></span>
+         <span>{{rating}}</span>
+        </div>
+      </h3>
     </div>
   </div>
 </template>
