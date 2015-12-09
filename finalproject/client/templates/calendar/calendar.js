@@ -1,11 +1,19 @@
-Session.setDefault('editing_classes', null);
-Session.setDefault('showEditing', false);
+Template.calendar.events({
+
+});
+
+/**Session.setDefault('editing_calevent', null);
+Session.setDefault('showEditEvent', false);
 Session.setDefault('lastMod', null);
 
+Template.editEvent.evt = function() {
+  return CalEvents.findOne({id:Session.get('editing_calevent')});
+}
+
 Template.calendar.rendered = function(){
-  /**$('#calendar').fullCalendar({
+  $('#calendar').fullCalendar({
     dayClick: function (date, allDay, jsEvent, view) {
-      Classes.insert({
+      CalEvents.insert({
         title: 'New Event',
         start: date,
         end: date,
@@ -14,28 +22,29 @@ Template.calendar.rendered = function(){
       Session.set('lastMod', new Date());
     },
     eventClick: function (calEvent, jsEvent, view) {
-      Session.set('editing_classes', calEvent.id);
+      Session.set('editing_calevent', calEvent.id);
       Session.set('showEditing', true);
     },
     eventDrop: function (calEvent) {
-      Classes.update(calEvent.id, {$set: {start: calEvent.start, end: calEvent.end}});
+      CalEvents.update(calEvent.id, {$set: {start: calEvent.start, end: calEvent.end}});
     },
     events: function (start, end, callback) {
       var events = [];
-      calEvents = Classes.find();
+      calEvents = CalEvents.find();
       calEvents.forEach(function (evt) {
         events.push({
           id: evt._id,
           title: evt.title,
           start: evt.start,
           end: evt.end
-        })
+        });
       });
       callback(events);
     },
     editable: true,
     schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives'
-  })*/
+  })
+
   $('#calendar').fullCalendar({
     dayClick: function(date, jsEvent, view, resourceObj) {
       $(this).css('background-color', 'green');
@@ -47,11 +56,9 @@ Template.calendar.rendered = function(){
 
 Template.calendar.helpers({
   showEditing: function() {
-    return Session.get('showEditing');
+    return Session.get('showEditEvent');
   },
   lastMod: function() {
     return Session.get('lastMod');
   }
-});
-
-
+});*/

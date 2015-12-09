@@ -6,10 +6,11 @@ Template.scheduler.helpers({
     return {
       defaultView: 'basicWeek'
     };
-  },
-  render: function() {
-  $('#calendar').fullCalendar({
-    schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives'
-  });
   }
 });
+
+Template.scheduler.rendered = function() {
+  $('#weekSched').fullCalendar({
+    schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives'
+  });
+}

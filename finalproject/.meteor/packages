@@ -23,3 +23,6 @@ mrt:fullcalendar
 drblue:fullcalendar
 accounts-ui
 accounts-password
+sacha:spin
+cfs:standard-packages
+cfs:gridfs

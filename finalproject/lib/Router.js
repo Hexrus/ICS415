@@ -10,7 +10,10 @@ Router.route('/scheduler', {
 });*/
 
 Router.configure({
-  layoutTemplate: 'Layout'
+  layoutTemplate: 'Layout',
+  waitOn: function() {
+    return Meteor.subscribe('classes')
+  }
 });
 
 Router.map(function() {
