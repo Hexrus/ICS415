@@ -6,7 +6,6 @@
         <li><a href="{{pathFor 'home'}}">Home</a></li>
         {{#if currentUser}}
         <li><a href="{{pathFor 'upload'}}">Upload</a></li>
-        <li><a href="{{pathFor 'favorites'}}">My Favorites</a></li>
         {{else}}
         <li><a href="#">{{> loginButtons align="right"}}</a></li>
         {{/if}}

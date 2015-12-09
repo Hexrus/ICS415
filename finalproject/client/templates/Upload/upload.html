@@ -2,6 +2,10 @@
   {{#if currentUser}}
     {{> dropzone}}
   {{/if}}
+
+  {{#each images}}
+  {{> image}}
+  {{/each}}
 </template>
 
 <template name="dropzone">

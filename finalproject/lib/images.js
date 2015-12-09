@@ -3,6 +3,7 @@
  */
 if(Meteor.isServer) {
   var imageStore = new FS.Store.S3("images", {
+    region: "us-west-2",
     accessKeyId: Meteor.settings.private.AWSAccessKeyId,
     secretAccessKey: Meteor.settings.private.AWSSecretAccessKey,
     bucket: Meteor.settings.private.AWSBucket
