@@ -1,0 +1,19 @@
+<head>
+  <title>Puns!</title>
+</head>
+
+<template name="main">
+  <div class="container">
+    <header class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Puns</a>
+      </div>
+    </header>
+    <div id="main">
+      {{#if currentUser}}
+      {{> postForm}}
+      {{/if}}
+      {{> postsList}}
+    </div>
+  </div>
+</template>
