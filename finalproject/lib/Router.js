@@ -11,13 +11,13 @@ Router.route('/scheduler', {
 
 Router.configure({
   layoutTemplate: 'Layout',
-  waitOn: function() {
+  /**waitOn: function() {
     return Meteor.subscribe('classes')
-  }
+  }*/
+  loadingTemplate: 'spinner'
 });
 
 Router.map(function() {
   this.route('home', {path:'/'});
-  this.route('scheduler', {path:'/scheduler'});
-  this.route('weeklyScheduler', {path:'/weeklyScheduler'});
+  this.route('upload', {path:'/upload'});
 });

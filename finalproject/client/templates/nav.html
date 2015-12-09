@@ -1,12 +1,12 @@
 <template name="nav">
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="navbar-inner">
-      <a class="brand" href="#">Class Scheduler</a>
+      <a class="brand" href="{{pathFor 'home'}}">phoTUR</a>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="{{pathFor 'home'}}">Home</a></li>
-        <li><a href="{{pathFor 'scheduler'}}">Spring Semester</a></li>
+        <li><a href="{{pathFor 'home'}}">Home</a></li>
         {{#if currentUser}}
-        <li><a href="{{pathFor 'weeklyScheduler'}}">My Schedule</a></li>
+        <li><a href="{{pathFor 'upload'}}">Upload</a></li>
+        <li><a href="{{pathFor 'favorites'}}">My Favorites</a></li>
         {{else}}
         <li><a href="#">{{> loginButtons align="right"}}</a></li>
         {{/if}}
