@@ -1,0 +1,989 @@
+<template name="weeklyScheduler">
+  <div class="container">
+    <div class="row overall">
+    <div class="row header">
+      <div class="col-xs-1 schedHeader" style="margin-top: -10px;">Time</div>
+      <div class="col-sm-2">
+        Monday
+      </div>
+      <div class="col-sm-2">
+        Tuesday
+      </div>
+      <div class="col-sm-2">
+        Wednesday
+      </div>
+      <div class="col-sm-2">
+        Thursday
+      </div>
+      <div class="col-sm-2">
+        Friday
+      </div>
+
+    </div>
+    <div class="row body">
+    <div class="row SeA">
+      <div class="col-xs-1">7AM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M700A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M715A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M730A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M745A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T700A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T715A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T730A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T745A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W700A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W715A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W730A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W745A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R700A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R715A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R730A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R745A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F700A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F715A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F730A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F745A"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row EiA">
+      <div class="col-xs-1">8AM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M800A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M815A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M830A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M845A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T800A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T815A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T830A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T845A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W800A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W815A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W830A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W845A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R800A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R815A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R830A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R845A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F800A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F815A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F830A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F845A"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row NiA">
+      <div class="col-xs-1">9AM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M900A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M915A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M930A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M945A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T900A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T915A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T930A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T945A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W900A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W915A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W930A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W945A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R900A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R915A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R930A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R945A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F900A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F915A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F930A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F945A"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row TeA">
+      <div class="col-xs-1">10AM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1000A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1015A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1030A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1045A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1000A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1015A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1030A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1045A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1000A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1015A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1030A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1045A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1000A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1015A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1030A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1045A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1000A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1015A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1030A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1045A"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row ElA">
+      <div class="col-xs-1">11AM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1100A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1115A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1130A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1145A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1100A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1115A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1130A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1145A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1100A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1115A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1130A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1145A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1100A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1115A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1130A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1145A"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1100A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1115A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1130A"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1145A"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row TwP">
+      <div class="col-xs-1">12PM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M1245P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T1245P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W1245P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R1245P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F1245P"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row OP">
+      <div class="col-xs-1">1PM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M100P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M115P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M130P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M145P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T100P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T115P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T130P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T145P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W100P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W115P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W130P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W145P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R100P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R115P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R130P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R145P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F100P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F115P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F130P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F145P"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row TwoP">
+      <div class="col-xs-1">2PM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M245P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T245P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W245P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R245P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F200P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F215P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F230P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F245P"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row ThP">
+      <div class="col-xs-1">3PM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M300P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M315P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M330P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M345P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T300P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T315P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T330P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T345P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W300P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W315P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W330P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W345P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R300P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R315P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R330P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R345P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F300P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F315P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F330P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F345P"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row FoP">
+      <div class="col-xs-1">4PM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M400P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M415P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M430P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M445P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T400P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T415P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T430P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T445P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W400P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W415P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W430P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W445P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R400P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R415P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R430P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R445P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F400P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F415P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F430P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F445P"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row FiP">
+      <div class="col-xs-1">5PM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M500P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M515P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M530P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M545P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T500P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T515P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T530P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T545P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W500P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W515P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W530P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W545P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R500P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R515P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R530P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R545P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F500P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F515P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F530P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F545P"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row SiP">
+      <div class="col-xs-1">6PM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M600P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M615P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M630P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M645P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T600P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T615P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T630P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T645P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W600P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W615P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W630P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W645P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R600P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R615P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R630P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R645P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F600P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F615P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F630P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F645P"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row SeP">
+      <div class="col-xs-1">7PM</div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M700P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M715P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M730P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="M745P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T700P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T715P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T730P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="T745P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W700P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W715P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W730P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="W745P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R700P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R715P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R730P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="R745P"></div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F700P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F715P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F730P"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 clickable" id="F745P"></div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </div>
+</template>

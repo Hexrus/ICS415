@@ -1,0 +1,39 @@
+.row .overall {
+  border: 2px black solid;
+}
+
+.row .header > .col-sm-2 {
+  height: 100px;
+}
+
+.col-xs-1 {
+  transform: rotate(270deg);
+}
+
+.col-sm-2 {
+  border: 3px black solid;
+  text-align: center;
+  height: 120px;
+}
+
+.col-sm-12 {
+  border: .5px solid;
+  height: 24%;
+}
+
+/**.SeA, .EiA, .NiA, .TeA, .ElA, .TwP, .OP, .TwoP, .ThP, .FoP, .FiP, .SiP, .SeP {
+  border: 3px black solid;
+  height: 120px;
+}*/
+
+.col-xs-1{
+  border: 3px black solid;
+  height: 120px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: -35px;
+  margin-right: 8px;
+  margin-left: -16.4087px;
+  transform: rotate(270deg);
+}
